@@ -1,0 +1,45 @@
+import java.util.Scanner;
+
+public class B2443 { // 별 찍기 - 6
+	public static void main(String[] args) {
+
+Scanner sc = new Scanner(System.in);
+		
+		int a = sc.nextInt();
+		int x = 0;
+		int y = 0;
+		int p = 0;
+		int count = 0;
+		
+		while (true) {
+			count++;
+			for (int i = a-x; i < a; i++) {
+				System.out.print(" ");
+			}
+			
+			for (int j = a; j <= a; j++) {
+				System.out.print("*");
+				
+			}
+			
+			for (int z = 1+p; z < a; z++) {
+				System.out.print("**"); 
+			}
+		
+			for (int i = a; i <= a; i++) {
+				if(a > count) 
+				System.out.print(" ");
+			}
+			
+			for (int i = a; i <=a; i++) {
+				if(a > count) 
+					System.out.println();
+			}
+			
+			x++;
+			p++;
+			
+			if (a == count) break;
+		}
+}
+}
