@@ -1,0 +1,89 @@
+import java.util.Scanner;
+
+public class B2447 { // 별 찍기 - 7
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+		
+		int a = sc.nextInt();
+		int x = 0;
+		int y = 0;
+		int p = 0;
+		int count = 0;
+		
+		int x2 = 0;
+		int y2 = 0;
+		int p2 = 0;
+		int count2 = 0;
+		int none2 = 0;
+		
+		while (true) {
+			count++;
+			for (int i = 1+x; i < a; i++) {
+				System.out.print(" ");
+			}
+			
+			for (int j = a; j <= a; j++) {
+				System.out.print("*");
+				
+			}
+			
+			for (int z = a+p; z < a; z++) {
+				System.out.print("**"); 
+			}
+		
+			for (int i = a; i <= a; i++) {
+				if(a > count) 
+				System.out.print(" ");
+			}
+			
+			for (int i = a; i <=a; i++) {
+				if(a > count) 
+					System.out.println();
+			}
+			
+			x++;
+			p--;
+			
+			if (a == count) break;
+		}
+
+
+
+
+while (true) {
+	count2++;
+	for (int i = a-x2; i < a; i++) {
+		System.out.print(" ");
+	}
+	
+	for (int j = a; j <= a; j++) {
+		if(none2 > 0) {
+		System.out.print("*");
+		}
+	}
+	
+	for (int z = 1+p2; z < a; z++) {
+		if(none2 > 0) {
+			System.out.print("**"); 
+		}
+	}
+
+	for (int i = a; i <= a; i++) {
+		if(a > count2) 
+		System.out.print(" ");
+	}
+	
+	for (int i = a; i <=a; i++) {
+		if(a > count2) 
+			System.out.println();
+	}
+	
+	x2++;
+	p2++;
+	none2++;
+	
+	if (a == count2) break;
+}
+}
+}
